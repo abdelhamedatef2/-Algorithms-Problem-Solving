@@ -32,7 +32,7 @@ stDate IncreaseDateByOneDay(stDate Date)
 	if (IsLastDayInMonth(Date))
 	{
 		if (IsLastMonthInYear(Date.Month))
-		{
+		{ 
 			Date.Month = 1;
 			Date.Day = 1;
 			Date.Year++;
