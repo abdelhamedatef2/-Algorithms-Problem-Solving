@@ -242,7 +242,7 @@ int PeriodLengthInDays(stPeriod Period , bool IncludeEndDate=false)
 }
 bool IsDateInPeriod(stPeriod Period, stDate DateToCheck)
 {
-	return (CompareDates(DateToCheck, Period.StartDate) == Before && CompareDates(DateToCheck, Period.EndDate) == After);
+	return (CompareDates(DateToCheck, Period.StartDate) == After && CompareDates(DateToCheck, Period.EndDate) == Before);
 }
 int main()
 {	
